@@ -1,17 +1,12 @@
-
-import ListGroup from "./components/ListGroup";
+import Alert from "./components/alert";
 
 function App() {
 
-  let items =[
-    'Nairobi',
-    'Nakuru',
-    'Mombasa',
-    'Eldoret'
-];
-const handleSelectItem = (items:string) => {
-  console.log(items);
-}
-  return <div><ListGroup items={items} heading="Kenya Cities" onselectItem={handleSelectItem} /></div>;
+ 
+  return <div>
+<Alert> 
+  Hello <span>there</span> Tracy
+</Alert>
+  </div>;
 }
 export default App;
