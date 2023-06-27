@@ -1,12 +1,13 @@
-import Alert from "./components/alert";
+import Button from "./components/Button";
 
 function App() {
 
  
-  return <div>
-<Alert> 
-  Hello <span>there</span> Tracy
-</Alert>
-  </div>;
+  return (
+  <div>
+<Button></Button>
+  </div>
+  
+  );
 }
 export default App;
