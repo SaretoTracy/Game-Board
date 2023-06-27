@@ -3,6 +3,12 @@ import ListGroup from "./components/ListGroup";
 
 function App() {
 
-  return <div><ListGroup /></div>;
+  let items =[
+    'Nairobi',
+    'Nakuru',
+    'Mombasa',
+    'Eldoret'
+];
+  return <div><ListGroup items={items} heading="Kenya Cities" /></div>;
 }
 export default App;
