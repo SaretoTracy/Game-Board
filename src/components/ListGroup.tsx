@@ -3,8 +3,10 @@ import { useState } from "react";
 interface Props{
     items:string[];
     heading:string;
+
+    onselectItem:(item: string) =>void
 }
-function ListGroup({items, heading}:Props) {
+function ListGroup({items, heading, onselectItem}:Props) {
   
 //event handler
 
@@ -19,7 +21,8 @@ function ListGroup({items, heading}:Props) {
       {items.map((item,index)=>(
     <li className={selectedIndex === index ? 'list-group-item active' : 'list-group-item ' } 
     key={item }
-    onClick={() => {setselectedIndex(index)}}>{item}</li>
+    onClick={() => {setselectedIndex(index);
+    onselectItem(item)}}>{item}</li>
       ))}
     </ul>
     </>

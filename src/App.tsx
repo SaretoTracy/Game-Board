@@ -9,6 +9,9 @@ function App() {
     'Mombasa',
     'Eldoret'
 ];
-  return <div><ListGroup items={items} heading="Kenya Cities" /></div>;
+const handleSelectItem = (items:string) => {
+  console.log(items);
+}
+  return <div><ListGroup items={items} heading="Kenya Cities" onselectItem={handleSelectItem} /></div>;
 }
 export default App;
